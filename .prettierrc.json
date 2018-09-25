@@ -1,0 +1,11 @@
+{
+  "prettier.trailingComma": "es5",
+  "prettier.arrowParens": "avoid",
+  "prettier.jsxBracketSameLine": false,
+  "prettier.eslintIntegration": true,
+  "prettier.tslintIntegration": true,
+  "prettier.singleQuote": true,
+  "prettier.printWidth": 120,
+  "prettier.semi": true,
+  "prettier.tabWidth": 2
+}
