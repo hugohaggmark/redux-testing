@@ -2,7 +2,7 @@ import 'jest';
 import { AnyAction, Reducer } from 'redux';
 
 export interface IGiven<State> {
-  givenReducer: (reducer: Reducer, state?: State) => IWhen<State>;
+  givenReducer: (reducer: Reducer, state: State) => IWhen<State>;
 }
 
 export interface IWhen<State> {
@@ -60,10 +60,10 @@ export const reducerTester = <State>(): IGiven<State> => {
 
   const givenReducer = (
     reducer: Reducer<State, AnyAction>,
-    state?: State,
+    state: State,
   ): IWhen<State> => {
     reducerUnderTest = reducer;
-    initialState = state === undefined ? ({} as State) : state;
+    initialState = state;
     initialState = deepFreeze(initialState);
 
     return instance;

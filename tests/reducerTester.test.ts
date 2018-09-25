@@ -62,7 +62,7 @@ describe('counterReducer', () => {
     });
   });
 
-  describe('when unknown action is dispatched', () => {
+  describe('when UNKNOWN action is dispatched', () => {
     describe('and counter is 1 in state', () => {
       it('then counter should be 1', () => {
         reducerTester<ICounterReducerState>()
