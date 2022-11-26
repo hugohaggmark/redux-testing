@@ -1,4 +1,4 @@
 language: node_js
 node_js:
-  - "16"
+  - "18"
 npm_args: "npm run build && npm t"
